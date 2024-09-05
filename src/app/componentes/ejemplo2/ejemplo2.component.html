@@ -1,0 +1,16 @@
+<h1>{{saludo}}</h1>
+<button routerLink="/">Salir del componente</button>
+<button (click)="enviarImagen(0)">Cargar imagen 1</button>
+<button (click)="enviarImagen(1)">Cargar imagen 1</button>
+<button (click)="enviarImagen(2)">Cargar imagen 1</button>
+<button (click)="enviarImagen(3)">Cargar imagen 1</button>
+ 
+<app-ejemplo1
+[imagenDelPadre]="imagenActual"
+(emisor)="onEmit($event)"
+/>
+
+<app-ejemplo1
+[imagenDelPadre]="imagenActual"
+(emisor) ="onEmit($event)"
+/>
